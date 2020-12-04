@@ -119,6 +119,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin-right: 10px;
+  text-transform: capitalize;
 }
 
 .comment__wrapper .comment input {

@@ -8,9 +8,6 @@ import { Token } from '../../../utils/Token';
 
 import { AuthContext } from "../../../context/AuthContext"
 
-// 1070625082168-rk1rcetamuoevavgj1op0h9eii8703fn.apps.googleusercontent.com- clientid
-// o2UHAbt7dD2RVUyJF_tENV7N - secret
-
 function Login(props) {
 const { setUser, setIsAuth, setSname } = useContext(AuthContext);
 const clientId = `${process.env.REACT_APP_GOOGLEID}`
@@ -19,7 +16,7 @@ const onSuccess = (res) => {
     setIsAuth(true)
     setUser(res.profileObj.name);
     setSname(res.profileObj.givenName.charAt(0));
-
+    console.log("worked", res.profileObj)
     localStorage.setItem("tokens", res.profileObj.googleId);
     localStorage.setItem("name", res.profileObj.name);
 
