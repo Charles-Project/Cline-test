@@ -16,7 +16,7 @@ const onSuccess = (res) => {
     setIsAuth(true)
     setUser(res.profileObj.name);
     setSname(res.profileObj.givenName.charAt(0));
-    console.log("worked", res.profileObj)
+  
     localStorage.setItem("tokens", res.profileObj.googleId);
     localStorage.setItem("name", res.profileObj.name);
 
