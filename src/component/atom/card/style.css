@@ -1,0 +1,148 @@
+.card_wrapper {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.margin__top {
+  margin-top: 10px;
+}
+
+.card__header--wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__header--wrapper h5 {
+  opacity: 0.7;
+  font-weight: 500;
+}
+
+.card__header--wrapper .icon__wrapper {
+  width: 30px;
+  height: 30px;
+  background-color: royalblue;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.card__header--wrapper .icon__wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.card__header--wrapper .icon__wrappers {
+  font-size: 28px;
+  color: #D60002;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+}
+
+.card__content {
+  padding-top: 18px;
+}
+
+.card__content .card__content--title {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 16px;
+}
+
+.card__content p {
+  font-size: 14px;
+  text-transform: capitalize;
+  opacity: 0.9;
+  line-height: 20px;
+}
+
+.comment__wrapper {
+  padding-top: 22px;
+}
+
+.comment__wrapper .repost__share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #7A66FD;
+}
+
+.comment__wrapper .dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #7A66FD;
+  margin: 0 7px;
+  display: block;
+}
+
+.comment__wrapper .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.comment__wrapper .comment .circle__comment {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+
+.comment__wrapper .comment input {
+  padding: 7px 12px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background-color: #F6F6F6;
+}
+
+.card__image {
+  width: 100%;
+  height: 208px;
+}
+
+.card__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.p20 {
+  padding-bottom: 20px;
+}
+/*# sourceMappingURL=style.css.map */
