@@ -1,5 +1,11 @@
 import React, { createContext, useState, useEffect } from "react";
+ import Loader from 'react-loader-spinner'
+ import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
 export const AuthContext = createContext();
+
+// -------------------------------------------
+//  import Loader from 'react-loader-spinner'
+//  import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
 
 export default ({ children }) => {
   // state for authentication
@@ -31,7 +37,21 @@ export default ({ children }) => {
   return (
     <div>
       {!isLoaded ? (
-        <h1>Loading</h1>
+       
+            <div className="loader__wrapper">
+                   <Loader type="Circles" color="#00BFFF" style={{
+                     display: "flex", 
+                     justifyContent: "center", 
+                     alignItems:"center",
+                     width: "100%",
+                     background: "white",
+                     height: "500% !important"
+                   
+                   }} height={632} width={80} />
+            </div>
+           
+        
+
       ) : (
         <AuthContext.Provider
           value={{
